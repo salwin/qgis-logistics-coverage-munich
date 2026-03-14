@@ -15,9 +15,14 @@ Takes a set of delivery hubs and a city road network, then calculates:
 ---
 
 ## Screenshots
+### Delivery Hubs
+![Delivery Hubs](Screenshots/Random_Delivery_Hubs_in_Munich.png)
+
+20 randomly generated delivery hubs placed across Munich city boundary.
+Munich Boundary is Marked in 🟤
 
 ### Coverage Zones
-![Coverage Analysis](screenshots/coverage_analysis.png)
+![Coverage Analysis](Screenshots/Coverage_Analysis_Isochrones.png)
 
 🔴 0 — 3333m from nearest hub  
 🟡 3333 — 6666m from nearest hub  
@@ -25,14 +30,18 @@ Takes a set of delivery hubs and a city road network, then calculates:
 🟣 Beyond 10000m — no hub coverage  
 
 ### Coverage Gaps
-![Coverage Gaps](screenshots/coverage_gaps.png)
+![Coverage Gaps](Screenshots/Coverage_Gaps.png)
 
-North and south Munich fall outside all hub reach within 10km.
+
+🔵 Blue = areas completely outside all hub reach within 10km.
+North and south Munich are underserved — no hub can reach these 
+neighborhoods within 10km by road.
+
 
 ### Hub Territories
-![Voronoi](screenshots/voronoi.png)
+![Voronoi](Screenshots/Voronoi_Territories.png)
 
-Each zone shows the area closest to one specific hub.
+Each zone shows the area closest to one specific hub. Assigned Random Colours. 
 
 ---
 
@@ -70,11 +79,13 @@ actual facility coordinates.
 
 ## Project Structure
 ```
-├── logistics_coverage_analysis.py   # Main PyQGIS script
-├── screenshots/                     # Map outputs
-│   ├── coverage_analysis.png
-│   ├── coverage_gaps.png
-│   └── voronoi.png
+├── Scripts/
+│   └── logistics_coverage_analysis.py
+├── Screenshots/
+│   ├── Coverage_Analysis_Isochrones.png
+│   ├── Coverage_Gaps.png
+│   ├── Random_Delivery_Hubs_in_Munich.png
+│   └── Voronoi_Territories.png
 └── README.md
 ```
 
