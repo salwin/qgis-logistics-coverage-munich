@@ -1,4 +1,11 @@
 # Last-Mile Delivery Coverage Gap Analysis — Munich
+![QGIS](https://img.shields.io/badge/QGIS-3.28-green?logo=qgis)
+![PyQGIS](https://img.shields.io/badge/PyQGIS-3.28-blue)
+![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)
+![QNEAT3](https://img.shields.io/badge/QNEAT3-Network%20Analysis-orange)
+![OSM](https://img.shields.io/badge/OpenStreetMap-Data-brightgreen?logo=openstreetmap)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+
 
 A PyQGIS script demonstrating delivery coverage gap analysis using 
 simulated hub locations and OpenStreetMap road network data for Munich.
